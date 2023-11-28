@@ -1,0 +1,53 @@
+.custom-dropdown {
+  position: relative;
+
+  button {
+    background: transparent;
+    border: none;
+  }
+
+  ul {
+    background: #fff;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
+      rgba(0, 0, 0, 0.1) 0px 4px 11px;
+    position: absolute;
+    list-style: none;
+    width: 200px;
+    overflow-y: auto;
+    max-height: 200px;
+    &.right {
+      left: 100%;
+    }
+    &.left {
+      right: 100%;
+    }
+
+    li {
+      display: flex;
+      line-height: 18px;
+      color: #333;
+      font-size: 14px;
+      list-style-type: none;
+      border-bottom: 1px solid #f0f0f0;
+      cursor: pointer;
+      &:hover {
+        background-color: #f9f9f9;
+      }
+
+      button {
+        font-size: unset;
+        width: 100%;
+        color: unset;
+        background: transparent;
+        border: none;
+        word-break: break-word;
+        padding: 10px;
+        text-align: left;
+        span {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
